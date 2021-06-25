@@ -1,7 +1,7 @@
 
 {
-    "short_name": "Staff Directory",
-    "name": "Staff Directory",
+    "short_name": "React Directory",
+    "name": "Reacr Directory",
     "icons": [
       {
         "src": "favicon.ico",
@@ -9,12 +9,12 @@
         "type": "image/x-icon"
       },
       {
-        "src": "logo192.png",
+        "src": "reactlogo192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "logo512.png",
+        "src": "reactlogo512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
