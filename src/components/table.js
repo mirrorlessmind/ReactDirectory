@@ -96,7 +96,7 @@ class Table extends React.Component {
               </tr>
             </thead>
 
-            { //First Name sort
+            { 
               this.state.results && this.state.results.map(item =>
                 item.name.first.toLowerCase().includes(this.state.search) ?
                   <tbody key={item.login.uuid}>
@@ -111,7 +111,7 @@ class Table extends React.Component {
                   </tbody>
 
                   :
-                  //Last Name sort
+                 
                   item.name.last.toLowerCase().includes(this.state.search) ?
                     <tbody key={item.login.uuid}>
                       <tr>

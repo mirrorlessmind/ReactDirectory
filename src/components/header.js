@@ -1,17 +1,13 @@
-import React from "react";
-import "../styles/header.css"
+import React from 'react';
+import "../styles/Header.css";
 
-function Jumbotron() {
-  return (
-  <div>
-    <header>
-      <div className="container">
-        <h1 className="display-4"><i className="fas fa-user-friends"></i> <b>Staff Directory</b></h1>
-        <p className="lead">Search by first or last name or click the column heading to sort.</p>
+function Header () {
+    return (
+      <div className="header">
+        <h1 className="display-4"><i className="fas fa-user-friends"></i> Staff Directory</h1>
+        <p>Click to filter or use the search box to refine your results.</p>
       </div>
-    </div>
-  </div>
-  );
-}
+    )
+  }
 
-export default header;
+export default Header;
