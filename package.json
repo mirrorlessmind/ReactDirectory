@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+ 	},
+	"homepage": "https://mirrorlessmind.github.io/ReactDirectory",
+	"devDependencies": {
+		"gh-pages": "^3.2.3"
+	}
 }
