@@ -13,8 +13,6 @@ class Table extends React.Component {
     results: [],
     search: ""
   }
-
-  //Api call for randomuser.me
   componentDidMount() {
     API.ApiSearch()
       .then(res => {
@@ -23,8 +21,6 @@ class Table extends React.Component {
       }).catch(err => console.log(err))
   }
 
-
-  //Handle input in search bar 
   handleInputChange = event => {
 
     if (event.target.name === "search") {
@@ -34,8 +30,6 @@ class Table extends React.Component {
       })
     }
   }
-
-  //Sort by first name
   sortByFName = () => {
     const sortedEmployees = this.state.results.sort((a, b) => {
       if (b.name.first > a.name.first) {
@@ -76,7 +70,6 @@ class Table extends React.Component {
     this.setState({ results: sortedEmployees })
   }
 
-  //Render items 
   render() {
     return (
       <div>
@@ -84,7 +77,7 @@ class Table extends React.Component {
           search={this.state.search} />
 
         <div className="table-responsive">
-        <table className="table table-striped table-resposive text-center table-hover">
+          <table className="table table-striped table-resposive text-center table-hover">
             <thead>
               <tr>
                 <th>Image</th>
@@ -96,7 +89,7 @@ class Table extends React.Component {
               </tr>
             </thead>
 
-            { 
+            {
               this.state.results && this.state.results.map(item =>
                 item.name.first.toLowerCase().includes(this.state.search) ?
                   <tbody key={item.login.uuid}>
@@ -106,25 +99,24 @@ class Table extends React.Component {
                       <td >{item.name.last}</td>
                       <td >{item.phone}</td>
                       <td >{item.email}</td>
-                      <td>{DateFormat(item.dob.date, "mediumDate")}</td>  
+                      <td>{DateFormat(item.dob.date, "mediumDate")}</td>
                     </tr>
                   </tbody>
 
                   :
-                 
+
                   item.name.last.toLowerCase().includes(this.state.search) ?
                     <tbody key={item.login.uuid}>
                       <tr>
-                      <td ><img src={item.picture.thumbnail} className="rounded-circle" alt="thumbnail" /></td>
+                        <td ><img src={item.picture.thumbnail} className="rounded-circle" alt="thumbnail" /></td>
                         <td >{item.name.first}</td>
                         <td >{item.name.last}</td>
                         <td >{item.phone} </td>
                         <td >{item.email}</td>
-                        <td>{DateFormat(item.dob.date, "mediumDate")}</td>  
+                        <td>{DateFormat(item.dob.date, "mediumDate")}</td>
                       </tr>
                     </tbody>
-                    :
-                    null
+                    :null
               )}
           </table>
         </div>
@@ -133,4 +125,4 @@ class Table extends React.Component {
   }
 }
 
-export default table;
+export default Table;

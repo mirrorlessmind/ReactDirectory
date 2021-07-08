@@ -1,6 +1,6 @@
-.jumbotron {
-    height: 300px;
-    color: white;
+.header {
+    height: 200px;
+    color: rgb(199, 170, 197);
     background-color: #8f54c0;
     display: flex;
     align-items: center;
