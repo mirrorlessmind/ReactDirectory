@@ -7,7 +7,7 @@
 
 ## Search Your Employee Directory With React
 
-![Demo Image](public/icons/demo2.jpg?raw=true "Demo Image")
+![Demo Image](public/reactdemo.jpg?raw=true "Demo Image")
 
 ## Languages & Technology Involved
 Featuring: React, Javascript, MongoDb,Mongoose, GitPages, Node.js,JSON, ES6+,CSS, npm modules.
@@ -21,7 +21,7 @@ Heroku Deployed <a href="https://budgettrack2.herokuapp.com">BudgetTracker App</
 - [License](#license)
 - [Questions](#questions)
 ## Usage
-Utilizing the speed and abilites of the UI with React, easliy search the database
+Utilizing the speed and abilites of the UI with React, easliy search the API database.
 
 ## Description of Development 🔥
 React Directory was first tested using LocalHost, MongoDB and Atlas. For final user interface it was deployed to Git Pages.
