@@ -2,9 +2,7 @@ import React from "react";
 import API from "../utils/api.js"
 import Search from "../components/search"
 import "../styles/table.css"
-
-
-import DateFormat from 'dateformat';
+import DateFormat from "dateformat"
 
 class Table extends React.Component {
 
@@ -50,7 +48,7 @@ class Table extends React.Component {
     this.setState({ results: sortedEmployees })
   }
 
-  //Sort by last name 
+
   sortByLName = () => {
     const sortedEmployees = this.state.results.sort((a, b) => {
       if (b.name.last > a.name.last) {
