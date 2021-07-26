@@ -13,7 +13,7 @@
 Featuring: React, Javascript, MongoDb,Mongoose, GitPages, Node.js,JSON, ES6+,CSS, npm modules.
 
 ##App Deployed
-Heroku Deployed <a href="https://budgettrack2.herokuapp.com">eact Directoy</a>
+Heroku Deployed <a href="https://mirrorlessmind.github.io/ReactDirectory">eact Directoy</a>
 
 ## Table of Contents
 - [Use](#use)
